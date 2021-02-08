@@ -1,4 +1,5 @@
 export const routes = {
   home: "/",
-  page1: "/1"
+  page1: "/1",
+  page2: "/2",
 }
