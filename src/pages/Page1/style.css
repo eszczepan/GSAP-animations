@@ -1,0 +1,25 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  visibility: hidden;
+}
+
+.circle{
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  background-color: #FDCF51;
+  margin: 50px;
+}
+
+.red{
+  background-color: #FD5151;
+}
+
+.blue{
+  background-color: #51A0FD;
+}
