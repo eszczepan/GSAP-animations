@@ -3,7 +3,7 @@ import { TweenMax, Power3 } from "gsap";
 import "./style.css";
 
 const Page1 = () => {
-  const [expand, setExpand] = useState(false);
+  const [expand, setExpand] = useState<boolean>(false);
 
   const container = useRef<HTMLDivElement>(null);
   const circle = useRef<HTMLDivElement>(null);
@@ -11,19 +11,19 @@ const Page1 = () => {
   const circleBlue = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    TweenMax.to(container.current, 0, { css: { visibility: "visible" } });
-    TweenMax.from(circle.current, 0.8, {
+    TweenMax.to(container.current!, 0, { css: { visibility: "visible" } });
+    TweenMax.from(circle.current!, 0.8, {
       opacity: 0,
       x: 40,
       ease: Power3.easeOut,
     });
-    TweenMax.from(circleRed.current, 0.8, {
+    TweenMax.from(circleRed.current!, 0.8, {
       opacity: 0,
       x: 40,
       ease: Power3.easeOut,
       delay: 0.2,
     });
-    TweenMax.from(circleBlue.current, 0.8, {
+    TweenMax.from(circleBlue.current!, 0.8, {
       opacity: 0,
       x: 40,
       ease: Power3.easeOut,
@@ -32,7 +32,7 @@ const Page1 = () => {
   }, []);
 
   const handleExpand = () => {
-    TweenMax.to(circleRed.current, 0.8, {
+    TweenMax.to(circleRed.current!, 0.8, {
       width: 200,
       height: 200,
       ease: Power3.easeOut,
@@ -41,7 +41,7 @@ const Page1 = () => {
   };
 
   const handleShrink = () => {
-    TweenMax.to(circleRed.current, 0.8, {
+    TweenMax.to(circleRed.current!, 0.8, {
       width: 75,
       height: 75,
       ease: Power3.easeOut,
