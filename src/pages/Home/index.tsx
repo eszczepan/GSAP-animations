@@ -8,12 +8,12 @@ function App() {
   const textItem = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    TweenMax.to(logoItem.current, 0.8, {
+    TweenMax.to(logoItem.current!, 0.8, {
       opacity: 1,
       y: -20,
       ease: Power3.easeOut,
     });
-    TweenMax.to(textItem.current, 0.8, {
+    TweenMax.to(textItem.current!, 0.8, {
       delay: 0.4,
       opacity: 1,
       y: -20,
